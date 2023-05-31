@@ -16,23 +16,24 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BigBlueButton</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Open Graph Attributes -->
-    <meta property="og:title" content="BigBlueButton" />
-    <meta property="og:description" content="<% t('opengraph.description') %>" />
-    <meta property="og:image" content="<%= branding_image %>" />
 
-    <%= csrf_meta_tags %>
+<head>
+  <title>Se former au pays</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Open Graph Attributes -->
+  <meta property="og:title" content="BigBlueButton" />
+  <meta property="og:description" content="<% t('opengraph.description') %>" />
+  <meta property="og:image" content="<%= branding_image %>" />
+
+  <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "main", defer: true %>
-  </head>
+      <%= stylesheet_link_tag "application" %>
+        <%= javascript_include_tag "main" , defer: true %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+  <%= yield %>
+</body>
+
 </html>
-
